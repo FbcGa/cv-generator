@@ -1,0 +1,89 @@
+{
+  "profile": {
+    "name": "Fabricio Alipazaga Cuello",
+    "title": "Fullstack Software Engineer",
+    "contact": {
+      "email": "fabricio.alipazaga.pe@gmail.com",
+      "phone": "+51 938 767 099",
+      "location": "Lima, Peru",
+      "links": [
+        {
+          "label": "Email",
+          "url": "fabricio.alipazaga.pe@gmail.com"
+        },
+        {
+          "label": "Phone",
+          "url": "+51 938 767 099"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/fabricio-alipazaga/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/FbcGa"
+        }
+      ]
+    },
+    "education": [
+      {
+        "school": "UPC",
+        "degree": "Electronics Engineer"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Spanish",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "Intermediate"
+      }
+    ],
+    "interests": [
+      "Software Development",
+      "Machine Learning",
+      "AI",
+      "Cybersecurity",
+      "Blockchain"
+    ]
+  },
+  "summary": " Full Stack Developer with 5 years of experience in software development. I am a quick learner and I am always looking for new challenges. I am a team player and I am able to work under pressure. I am a problem solver and I am able to work independently.",
+  "job experiences": [
+    {
+      "company": "PSE",
+      "role": "Senior Engineer",
+      "start": "2022-01",
+      "end": "present",
+      "highlights": [
+        "Led migration of a monolith API to containerized services.",
+        "Cut incident response time with better observability and runbooks."
+      ]
+    },
+    {
+      "company": "Starter Co",
+      "role": "Engineer",
+      "start": "2019-06",
+      "end": "2021-12",
+      "highlights": [
+        "Built billing integrations and reconciliation tooling.",
+        "Mentored two junior developers on testing and code review."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "Backend": ""
+    },
+    {
+      "Frontend": ""
+    },
+    {
+      "Database": ""
+    },
+    {
+      "DevOps": ""
+    }
+  ]
+}

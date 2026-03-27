@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ cv.profile.name }} — CV</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+
+<body class="container">
+  <aside class="profile-column" aria-label="Profile">
+    <img src="{{ url_for('static', filename='profile.png') }}" alt="" class="profile-photo" />
+    <h1>{{ cv.profile.name }}</h1>
+    <p class="profile-title">{{ cv.profile.title }}</p>
+    <ul class="contact">
+      <li>{{ cv.profile.contact.email }}</li>
+      <li>{{ cv.profile.contact.phone }}</li>
+      <li>{{ cv.profile.contact.location }}</li>
+      {% for link in cv.profile.contact.links %}
+      {% if link.label == "Email" %}
+      <li><a href="mailto:{{ link.url }}">{{ link.label }}</a></li>
+      {% elif link.label == "Phone" %}
+      <li><a href="tel:{{ link.url }}">{{ link.label }}</a></li>
+      {% else %}
+      <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <main class="content">
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">{{ cv.summary }}</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      {% for job in cv["job experiences"] %}
+      <article class="job">
+        <div class="job-head">
+          <h3>{{ job.role }} · {{ job.company }}</h3>
+          <span class="dates">{{ job.start }} — {{ job.end }}</span>
+        </div>
+        <ul>
+          {% for line in job.highlights %}
+          <li>{{ line }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        {% for skill in cv.skills %}
+        {% for category, _ in skill.items() %}
+        <li>{{ category }}</li>
+        {% endfor %}
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      {% for edu in cv.profile.education %}
+      <article class="edu">
+        <strong>{{ edu.school }}</strong> — {{ edu.degree }}
+      </article>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      {% for item in cv.profile.languages %}
+      <article class="edu">
+        <strong>{{ item.language }}</strong> — {{ item.level }}
+      </article>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <ul class="skills">
+        {% for interest in cv.profile.interests %}
+        <li>{{ interest }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>

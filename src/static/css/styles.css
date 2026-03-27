@@ -1,0 +1,162 @@
+:root {
+  --ink: #1a1a1e;
+  --muted: #5c5c66;
+  --accent: #2d6a4f;
+  --rule: #e2e4ea;
+  --paper: #fafaf8;
+  --font: "Georgia", "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 52rem;
+  padding: 2rem 1.5rem 3rem;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.45;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.35rem;
+  margin: 2rem 0 0.75rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.profile-column {
+  position: sticky;
+  top: 1.5rem;
+  background-color: #000080;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 1px solid var(--rule);
+}
+
+.profile-column h1 {
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+.profile-title {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 1.25rem;
+}
+
+.profile-column .contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.profile-column .contact li {
+  margin-bottom: 0.35rem;
+  word-break: break-word;
+}
+
+.profile-column .contact a {
+  color: var(--accent);
+}
+
+.content h2:first-of-type {
+  margin-top: 0;
+}
+
+.summary {
+  margin: 0;
+}
+
+.job {
+  margin-bottom: 1.25rem;
+}
+
+.job-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.dates {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.job ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+}
+
+.skills li {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  background: #f0f1f4;
+  border-radius: 4px;
+}
+
+.edu {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 40rem) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-column {
+    position: static;
+    text-align: center;
+  }
+}
