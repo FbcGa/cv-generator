@@ -3,24 +3,25 @@
     "name": "Fabricio Alipazaga Cuello",
     "title": "Fullstack Software Engineer",
     "contact": {
-      "email": "fabricio.alipazaga.pe@gmail.com",
-      "phone": "+51 938 767 099",
-      "location": "Lima, Peru",
       "links": [
         {
-          "label": "Email",
-          "url": "fabricio.alipazaga.pe@gmail.com"
+          "label": "email",
+          "data": "fabricio.alipazaga.pe@gmail.com",
+          "url": "mailto:fabricio.alipazaga.pe@gmail.com"
         },
         {
-          "label": "Phone",
-          "url": "+51 938 767 099"
+          "label": "phone",
+          "data": "+51 938 767 099",
+          "url": "tel:+51 938 767 099"
         },
         {
-          "label": "LinkedIn",
+          "label": "linkedin",
+          "data": "fabricio-alipazaga",
           "url": "https://www.linkedin.com/in/fabricio-alipazaga/"
         },
         {
-          "label": "GitHub",
+          "label": "github",
+          "data": "FbcGa",
           "url": "https://github.com/FbcGa"
         }
       ]
@@ -28,7 +29,11 @@
     "education": [
       {
         "school": "UPC",
-        "degree": "Electronics Engineer"
+        "degree": "BSc inElectronics Engineer"
+      },
+      {
+        "school": "4Geeks Academy",
+        "degree": "Full Stack Developer"
       }
     ],
     "languages": [
@@ -44,12 +49,10 @@
     "interests": [
       "Software Development",
       "Machine Learning",
-      "AI",
-      "Cybersecurity",
-      "Blockchain"
+      "AI"
     ]
   },
-  "summary": " Full Stack Developer with 5 years of experience in software development. I am a quick learner and I am always looking for new challenges. I am a team player and I am able to work under pressure. I am a problem solver and I am able to work independently.",
+  "summary": " Full Stack Developer with 5 years of experienc. I'm proficient in  React, TypeScript, FastAPI, and PostgreSQL. Skilled in REST API design, performance optimization, and automated testing (Jest, Pytest). Proven ability to improve system performance and deliver maintainable, production-ready solutions.",
   "job experiences": [
     {
       "company": "PSE",
